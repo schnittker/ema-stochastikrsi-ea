@@ -11,7 +11,7 @@
 //+------------------------------------------------------------------+
 #property copyright "Markus Schnittker"
 #property version   "1.00"
-#property description "Scannt alle Symbole der Market Watch (H1): EMA 50/100 + Stochastik-RSI-Kreuz, CRV 1:2"
+#property description "Scannt die Paare aus InpSymbols (leer = Market Watch) auf H1: EMA 50/100 + Stochastik-RSI-Kreuz, CRV 1:2"
 
 #include <Trade\Trade.mqh>
 
@@ -39,7 +39,7 @@ input int             InpMaxTotalTrades = 5;         // Max. offene Trades gesam
 
 //--- Allgemein
 input group "Allgemein"
-input string          InpSymbols          = "";      // Symbolliste (leer = alle aus Market Watch), z.B. "EURUSD,GBPUSD"
+input string          InpSymbols          = "EURUSD,GBPUSD,USDJPY,AUDUSD,NZDUSD,USDCAD,USDCHF,EURJPY,GBPJPY,AUDJPY,NZDJPY,CADJPY,CHFJPY,EURCAD,EURCHF,EURNZD,EURAUD,GBPCHF,GBPNZD,GBPCAD,GBPAUD,AUDNZD,AUDCAD,CADCHF"; // Symbolliste (leer = alle aus Market Watch)
 input int             InpMaxEntryDelayMin = 15;      // Signal verfällt, wenn Kerze älter als x Minuten
 input ulong           InpMagic            = 50100;   // Magic Number
 input int             InpSlippagePoints   = 10;      // Max. Slippage in Punkten

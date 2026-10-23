@@ -1,50 +1,60 @@
 ==============================================================================
 BACKTEST EMA 50/100 + Stochastik RSI (1H)
 ==============================================================================
-Paare: EURUSD, GBPUSD, USDJPY, USDCHF, AUDUSD, NZDUSD, USDCAD, EURJPY, GBPJPY, EURGBP, AUDJPY, EURAUD, GBPAUD, CADJPY
+Paare: EURUSD, GBPUSD, USDJPY, AUDUSD, NZDUSD, USDCAD, USDCHF, EURJPY, GBPJPY, AUDJPY, NZDJPY, CADJPY, CHFJPY, EURCAD, EURCHF, EURNZD, EURAUD, GBPCHF, GBPNZD, GBPCAD, GBPAUD, AUDNZD, AUDCAD, CADCHF
 Zeitraum: 24.01.2024 – 23.10.2026
 Startkapital: 100,000   Risiko 1.0 %   CRV 1:2   Swing-Lookback 5   max. 5 Trades
 Preis-EMA-Filter: an   Zonen 25/75   Kommission 0.0 Pips
 
-Trades: 4485  (TP 1294 / SL 3187 / offen 4)   ≈ 1635 pro Jahr
-Trefferquote: 28.9 %   (Break-even bei 1:2 ≈ 33.3 % inkl. Kosten etwas mehr)
-Profit Factor: 0.81
-Ø R pro Trade: -0.137   Summe R: -614.8
-Endkapital: 106  (-99.9 %)
-Max. Drawdown vom Hoch (geschlossen): 99.9 %
-Längste Verlustserie: 29
-Ø SL-Abstand: 23.3 Pips   Ø Haltedauer: 12.9 Kerzen
-SL und TP in derselben Kerze (als SL gewertet): 44
+Trades: 4699  (TP 1332 / SL 3362 / offen 5)   ≈ 1713 pro Jahr
+Trefferquote: 28.3 %   (Break-even bei 1:2 ≈ 33.3 % inkl. Kosten etwas mehr)
+Profit Factor: 0.79
+Ø R pro Trade: -0.152   Summe R: -716.2
+Endkapital: 50  (-100.0 %)
+Max. Drawdown vom Hoch (geschlossen): 100.0 %
+Längste Verlustserie: 24
+Ø SL-Abstand: 25.2 Pips   Ø Haltedauer: 15.3 Kerzen
+SL und TP in derselben Kerze (als SL gewertet): 50
 
 -- Long/Short --
        trades     TP      SL  trefferquote_%  profit_factor  avg_R   sum_R
-long   2303.0  699.0  1603.0           30.35           0.87  -0.09 -201.73
-short  2182.0  595.0  1584.0           27.27           0.74  -0.19 -413.10
+long   2455.0  684.0  1770.0           27.86           0.77  -0.16 -402.24
+short  2244.0  648.0  1592.0           28.88           0.81  -0.14 -313.93
 
 -- Paare --
-        trades     TP     SL  trefferquote_%  profit_factor  avg_R  sum_R
-AUDJPY   277.0   81.0  196.0           29.24           0.82  -0.12 -34.55
-AUDUSD   358.0  101.0  256.0           28.21           0.76  -0.18 -63.06
-CADJPY   245.0   69.0  176.0           28.16           0.79  -0.15 -37.58
-EURAUD   300.0   88.0  212.0           29.33           0.83  -0.12 -36.40
-EURGBP   322.0   79.0  242.0           24.53           0.65  -0.26 -84.73
-EURJPY   339.0   92.0  247.0           27.14           0.75  -0.19 -63.29
-EURUSD   415.0  116.0  299.0           27.95           0.78  -0.16 -66.51
-GBPAUD   293.0   79.0  214.0           26.96           0.74  -0.19 -56.59
-GBPJPY   295.0   93.0  201.0           31.53           0.92  -0.05 -15.64
-GBPUSD   331.0  101.0  230.0           30.51           0.89  -0.08 -25.94
-NZDUSD   299.0   75.0  224.0           25.08           0.67  -0.25 -75.43
-USDCAD   342.0  120.0  222.0           35.09           1.07   0.04  14.73
-USDCHF   326.0   96.0  230.0           29.45           0.84  -0.12 -37.68
-USDJPY   343.0  104.0  238.0           30.32           0.87  -0.09 -32.16
+        trades    TP     SL  trefferquote_%  profit_factor  avg_R  sum_R
+AUDCAD   134.0  36.0   98.0           26.87           0.73  -0.19 -26.00
+AUDJPY   173.0  53.0  120.0           30.64           0.88  -0.09 -14.75
+AUDNZD   200.0  51.0  149.0           25.50           0.68  -0.24 -48.41
+AUDUSD   256.0  76.0  179.0           29.69           0.82  -0.13 -34.23
+CADCHF   149.0  37.0  112.0           24.83           0.66  -0.26 -38.06
+CADJPY   154.0  42.0  112.0           27.27           0.75  -0.18 -27.72
+CHFJPY   182.0  47.0  135.0           25.82           0.69  -0.23 -41.62
+EURAUD   172.0  57.0  115.0           33.14           0.99  -0.01  -1.34
+EURCAD   205.0  46.0  159.0           22.44           0.58  -0.33 -67.00
+EURCHF   154.0  46.0  107.0           29.87           0.85  -0.10 -15.82
+EURJPY   232.0  71.0  161.0           30.60           0.88  -0.08 -18.98
+EURNZD   186.0  52.0  134.0           27.96           0.78  -0.16 -30.08
+EURUSD   313.0  83.0  230.0           26.52           0.72  -0.21 -65.10
+GBPAUD   152.0  35.0  117.0           23.03           0.60  -0.31 -47.37
+GBPCAD   173.0  46.0  126.0           26.59           0.74  -0.19 -33.27
+GBPCHF   196.0  52.0  144.0           26.53           0.72  -0.20 -40.00
+GBPJPY   214.0  57.0  156.0           26.64           0.74  -0.19 -41.40
+GBPNZD   176.0  45.0  131.0           25.57           0.69  -0.23 -41.00
+GBPUSD   245.0  70.0  175.0           28.57           0.80  -0.14 -35.30
+NZDJPY   161.0  53.0  108.0           32.92           0.97  -0.02  -2.77
+NZDUSD   193.0  59.0  134.0           30.57           0.88  -0.09 -16.93
+USDCAD   237.0  86.0  151.0           36.29           1.11   0.07  17.73
+USDCHF   192.0  58.0  134.0           30.21           0.87  -0.09 -18.00
+USDJPY   250.0  74.0  175.0           29.60           0.84  -0.11 -28.74
 
 -- Jahr --
       trades     TP      SL  trefferquote_%  profit_factor  avg_R   sum_R
-2024  1521.0  448.0  1073.0           29.45           0.83  -0.12 -182.39
-2025  1662.0  467.0  1195.0           28.10           0.78  -0.16 -262.14
-2026  1302.0  379.0   919.0           29.11           0.82  -0.13 -170.29
+2024  1641.0  497.0  1144.0           30.29           0.87  -0.09 -155.31
+2025  1617.0  442.0  1175.0           27.33           0.75  -0.18 -295.04
+2026  1441.0  393.0  1043.0           27.27           0.75  -0.18 -265.82
 
 -- Signale ohne Trade --
-  max. 5 Trades offen                      2434
-  bereits Position auf dem Paar            1848
-  SL auf falscher Seite (Gap)              17
+  max. 5 Trades offen                      7910
+  bereits Position auf dem Paar            2300
+  SL auf falscher Seite (Gap)              13

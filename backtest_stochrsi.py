@@ -31,14 +31,20 @@ warnings.filterwarnings("ignore", module="yfinance")
 
 from backtest import BERLIN, clean_h1, load_csv, load_yf, pip_size
 
-DEFAULT_PAIRS = ["EURUSD", "GBPUSD", "USDJPY", "USDCHF", "AUDUSD", "NZDUSD", "USDCAD",
-                 "EURJPY", "GBPJPY", "EURGBP", "AUDJPY", "EURAUD", "GBPAUD", "CADJPY"]
+# Standard-Watchlist aus ~/private/tradingjournal (WatchlistService), ohne XAUUSD
+DEFAULT_PAIRS = [
+    "EURUSD", "GBPUSD", "USDJPY", "AUDUSD", "NZDUSD", "USDCAD", "USDCHF", "EURJPY",
+    "GBPJPY", "AUDJPY", "NZDJPY", "CADJPY", "CHFJPY", "EURCAD", "EURCHF", "EURNZD",
+    "EURAUD", "GBPCHF", "GBPNZD", "GBPCAD", "GBPAUD", "AUDNZD", "AUDCAD", "CADCHF",
+]
 
 # Typische Retail-Spreads in Pips (Durchschnitt, nicht Minimum)
 DEFAULT_SPREADS = {
     "EURUSD": 0.8, "GBPUSD": 1.2, "USDJPY": 1.0, "USDCHF": 1.4, "AUDUSD": 1.0, "NZDUSD": 1.5,
     "USDCAD": 1.5, "EURJPY": 1.6, "GBPJPY": 2.5, "EURGBP": 1.3, "AUDJPY": 1.8, "EURAUD": 2.2,
-    "GBPAUD": 2.8, "CADJPY": 2.0,
+    "GBPAUD": 2.8, "CADJPY": 2.0, "NZDJPY": 2.0, "CHFJPY": 2.2, "EURCAD": 2.2, "EURCHF": 1.6,
+    "EURNZD": 3.0, "GBPCHF": 2.5, "GBPNZD": 3.5, "GBPCAD": 3.0, "AUDNZD": 2.0, "AUDCAD": 1.8,
+    "CADCHF": 2.0,
 }
 
 
