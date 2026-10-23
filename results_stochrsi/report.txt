@@ -1,0 +1,50 @@
+==============================================================================
+BACKTEST EMA 50/100 + Stochastik RSI (1H)
+==============================================================================
+Paare: EURUSD, GBPUSD, USDJPY, USDCHF, AUDUSD, NZDUSD, USDCAD, EURJPY, GBPJPY, EURGBP, AUDJPY, EURAUD, GBPAUD, CADJPY
+Zeitraum: 24.01.2024 – 23.10.2026
+Startkapital: 100,000   Risiko 1.0 %   CRV 1:2   Swing-Lookback 5   max. 5 Trades
+Preis-EMA-Filter: an   Zonen 25/75   Kommission 0.0 Pips
+
+Trades: 4485  (TP 1294 / SL 3187 / offen 4)   ≈ 1635 pro Jahr
+Trefferquote: 28.9 %   (Break-even bei 1:2 ≈ 33.3 % inkl. Kosten etwas mehr)
+Profit Factor: 0.81
+Ø R pro Trade: -0.137   Summe R: -614.8
+Endkapital: 106  (-99.9 %)
+Max. Drawdown vom Hoch (geschlossen): 99.9 %
+Längste Verlustserie: 29
+Ø SL-Abstand: 23.3 Pips   Ø Haltedauer: 12.9 Kerzen
+SL und TP in derselben Kerze (als SL gewertet): 44
+
+-- Long/Short --
+       trades     TP      SL  trefferquote_%  profit_factor  avg_R   sum_R
+long   2303.0  699.0  1603.0           30.35           0.87  -0.09 -201.73
+short  2182.0  595.0  1584.0           27.27           0.74  -0.19 -413.10
+
+-- Paare --
+        trades     TP     SL  trefferquote_%  profit_factor  avg_R  sum_R
+AUDJPY   277.0   81.0  196.0           29.24           0.82  -0.12 -34.55
+AUDUSD   358.0  101.0  256.0           28.21           0.76  -0.18 -63.06
+CADJPY   245.0   69.0  176.0           28.16           0.79  -0.15 -37.58
+EURAUD   300.0   88.0  212.0           29.33           0.83  -0.12 -36.40
+EURGBP   322.0   79.0  242.0           24.53           0.65  -0.26 -84.73
+EURJPY   339.0   92.0  247.0           27.14           0.75  -0.19 -63.29
+EURUSD   415.0  116.0  299.0           27.95           0.78  -0.16 -66.51
+GBPAUD   293.0   79.0  214.0           26.96           0.74  -0.19 -56.59
+GBPJPY   295.0   93.0  201.0           31.53           0.92  -0.05 -15.64
+GBPUSD   331.0  101.0  230.0           30.51           0.89  -0.08 -25.94
+NZDUSD   299.0   75.0  224.0           25.08           0.67  -0.25 -75.43
+USDCAD   342.0  120.0  222.0           35.09           1.07   0.04  14.73
+USDCHF   326.0   96.0  230.0           29.45           0.84  -0.12 -37.68
+USDJPY   343.0  104.0  238.0           30.32           0.87  -0.09 -32.16
+
+-- Jahr --
+      trades     TP      SL  trefferquote_%  profit_factor  avg_R   sum_R
+2024  1521.0  448.0  1073.0           29.45           0.83  -0.12 -182.39
+2025  1662.0  467.0  1195.0           28.10           0.78  -0.16 -262.14
+2026  1302.0  379.0   919.0           29.11           0.82  -0.13 -170.29
+
+-- Signale ohne Trade --
+  max. 5 Trades offen                      2434
+  bereits Position auf dem Paar            1848
+  SL auf falscher Seite (Gap)              17

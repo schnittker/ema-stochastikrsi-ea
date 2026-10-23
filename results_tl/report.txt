@@ -1,0 +1,68 @@
+==============================================================================
+BACKTEST-ERGEBNIS
+==============================================================================
+Paare: EURUSD, GBPUSD, USDJPY, AUDUSD, EURJPY
+Richtung: Trendlinie 4H (>= 3 Berührungen)
+Zeitraum: 08.04.2024 – 23.10.2026
+News-Filter: NICHT aktiv (keine --news Datei)
+Startkapital: 100,000 USD
+
+Trades: 228  (TP 47 / SL 157 / BE 24)
+Trefferquote (TP/alle): 20.6 %   (TP/(TP+SL): 23.0 %)   Break-even-Quote bei 1:2: 33,3 %
+Profit Factor: 1.18
+Ø R pro Trade: +0.14   Summe R: +31.4
+Endkapital: 120,473  (+20.5 %)
+Max. Drawdown vom Hoch (geschlossen): 18.5 %
+FTMO-Limit 10 %: tiefster Kontostand 94,907 -> eingehalten
+Trades mit 0,5 % Risiko (DD-Regel): 195
+Trades mit BE-Verschiebung: 51
+Kerzen mit SL+TP in derselben 1H-Kerze (konservativ als SL gewertet): 0
+Notbremse-Pausen: 4
+   ab 27.01.2025 bis 10.02.2025 (DD 6.2 %)
+   ab 22.05.2025 bis 05.06.2025 (DD 6.2 %)
+   ab 18.06.2025 bis 02.07.2025 (DD 6.5 %)
+   ab 06.01.2026 bis 20.01.2026 (DD 6.3 %)
+
+-- Bewertung (Abschnitt 9) --
+Zwischenbilanz nach 30 Trades: Trefferquote 23.3 %, PF 0.79 -> ÜBERPRÜFEN (Long/Short, Paare, Uhrzeit), nicht verwerfen
+Urteil nach 50 Trades: PF 0.94 -> funktioniert in dieser Form nicht -> genau eine Regel anpassen, neu zählen
+
+-- Long/Short --
+       trades    TP    SL    BE  trefferquote_%  profit_factor  sum_R
+long    100.0  22.0  69.0   9.0           22.00           1.45  22.42
+short   128.0  25.0  88.0  15.0           19.53           0.97   9.00
+
+-- Paare --
+        trades    TP    SL   BE  trefferquote_%  profit_factor  sum_R
+AUDUSD    42.0   8.0  31.0  3.0           19.05           0.96   1.39
+EURJPY    51.0  12.0  35.0  4.0           23.53           1.29   3.99
+EURUSD    37.0   8.0  26.0  3.0           21.62           0.85   0.07
+GBPUSD    52.0  11.0  33.0  8.0           21.15           1.26  13.63
+USDJPY    46.0   8.0  32.0  6.0           17.39           1.44  12.34
+
+-- Einstiegsstunde (DE) --
+    trades    TP    SL   BE  trefferquote_%  profit_factor  sum_R
+7     43.0  11.0  29.0  3.0           25.58           2.44  30.09
+8     30.0   4.0  17.0  9.0           13.33           0.93  -1.23
+9     20.0   2.0  14.0  4.0           10.00           0.96  -4.36
+10    13.0   0.0  11.0  2.0            0.00           0.00 -13.19
+11    25.0  11.0  13.0  1.0           44.00           2.31  27.17
+12    15.0   4.0  11.0  0.0           26.67           1.13   4.12
+13    13.0   2.0  10.0  1.0           15.38           1.21  -1.39
+14    18.0   3.0  14.0  1.0           16.67           0.64  -3.17
+15    12.0   2.0   9.0  1.0           16.67           0.59  -0.68
+16    10.0   2.0   6.0  2.0           20.00           1.06  -0.27
+17     9.0   3.0   6.0  0.0           33.33           1.50   4.55
+18     9.0   3.0   6.0  0.0           33.33           1.08   2.30
+19    11.0   0.0  11.0  0.0            0.00           0.00 -12.52
+
+-- Verworfene Kandidaten (erster nicht erfüllter Punkt) --
+  keine gültige 4H-Bewegung                     13065
+  Schluss nicht in Fib 0,5–0,7                  5191
+  keine intakte Trendlinie (>=3 Berührungen)    798
+  außerhalb 07–19 Uhr                           417
+  Trade-Tag bereits verbraucht                  167
+  Notbremse-Pause                               32
+  CRV < 1:2                                     30
+  Reaktionskerze jenseits der Trendlinie        18
+  TP liegt nicht vor dem Einstieg               2
